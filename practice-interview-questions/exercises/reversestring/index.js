@@ -12,21 +12,21 @@
 // 3. join the array back into a string
 // 4. return the result
 
-// function reverse(str) {
-//     const arr = str.split('');
-//     arr.reverse();
-//     return arr.join('');
-// }
+function reverse(str) {
+    const arr = str.split('');
+    arr.reverse();
+    return arr.join('');
+}
 
-// module.exports = reverse;
+module.exports = reverse;
 
 // rewriting the code in a cleaner way:
 
-// function reverse(str) {
-//     return str.split('').reverse().join('')
-// }
+function reverse(str) {
+    return str.split('').reverse().join('')
+}
 
-//module.exports = reverse;
+module.exports = reverse;
 
 // Method 2: for loop (use ES6 syntax instead of var i = 0; i > str.length; i++ )
 // 1.  create an empty string called 'reversed'
@@ -38,15 +38,16 @@
 // then we say "of" and then iterable object that we want to iterate through
 // we then take take character added on the start of the string reverse
 // then after the entire for loop, we return the string "reversed"
-// function reverse(str) {
-//     let reversed = '';
-//     for (let character of str) {
-//         reversed = character + reversed;
-//     }
-//     return reversed;
-// }
 
-// module.exports = reverse;
+function reverse(str) {
+    let reversed = '';
+    for (let character of str) {
+        reversed = character + reversed;
+    }
+    return reversed;
+}
+
+module.exports = reverse;
 
 // take our str and turn it into an array by calling the split function on it
 // then we are gonna use the reduce helper
