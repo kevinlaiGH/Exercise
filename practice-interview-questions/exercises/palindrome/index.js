@@ -5,8 +5,18 @@
 // and punctuation in determining if the string is a palindrome.
 // --- Examples:
 //   palindrome("abba") === true
-//   palindrome("abcdefg") === false
+//   palindrome("abcdefg") === false (gfedcba)
 
-function palindrome(str) {}
+// return statement is used when we need to export raw data from inside of a function.
+// console.log works fine if all we want is to display data
+// but when we want to reuse data on another script we need to export it with a return statement
+
+// we want to reverse out string first
+// if str=== reverse return true, if not return false
+
+function palindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
 
 module.exports = palindrome;

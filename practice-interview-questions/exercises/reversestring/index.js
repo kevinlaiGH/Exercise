@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// Method 1: Steps
+// Method 1: Steps (split, reduce, join)
 // 1. turn 'str' into an array
 // 2. call 'reverse' method on the array
 // 3. join the array back into a string
@@ -49,6 +49,7 @@ function reverse(str) {
 
 module.exports = reverse;
 
+//method 3: reduce helper
 // take our str and turn it into an array by calling the split function on it
 // then we are gonna use the reduce helper
 // reduce is used to take all the different values of an array, it condense them
@@ -67,3 +68,11 @@ function reverse(str) {
 }
 
 module.exports = reverse;
+
+//Debugger steps
+// 1. Add a 'debugger' statement in your function
+// 2. call the function manually
+// 3. at the terminal, run 'node inspect index.js'
+// 4. to continue execution of the file, press 'C' then 'enter'
+// 5. to launch a 'repl' session, type 'repl' then 'enter'
+// 6. to exit 'repl', press Control + C
