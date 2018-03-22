@@ -13,7 +13,10 @@
 //   buzz
 
 //Make a loop to iterate 1 to n
-// User a filter funnel approach :Is the number a multiple of 3 and 5?
+// Use a filter funnel approach :Is the number a multiple of 3 and 5?
+// Is it a multiple of 3? console.log fizz
+// Is it a multiple of 5? console.log buzz
+// if not, return to the number
 function fizzBuzz(n) {
     for (let i = 0; i <= n; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
