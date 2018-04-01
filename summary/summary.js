@@ -49,5 +49,15 @@ fruits.splice(2, 0, 'Lemon', 'Kiwi')
 
 // output = Banana, Orange, Lemon, Kiwi, Apple, Mango
 
+// 8. Delete - It deletes an item from the array but the problem with delete is that it creates an void.(empty)
+
+
+// 9. Shift - The shift() method removes the first item of an array, and returns that item.
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+// output = Orange,Apple,Mango
+
 
 
