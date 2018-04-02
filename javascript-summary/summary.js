@@ -59,5 +59,16 @@ fruits.shift();
 
 // output = Orange,Apple,Mango
 
+// 10. Map is a property on every array in Javascript and allows you "map" over an array, modified each item in that array,
+// returns you a new array after each item in the array has been modified
+
+var numbers = [1, 2, 3];
+var numbersPlusTen = numbers.map(function (num) {
+    return num + 10;
+});
+console.log(numberPlusTen) // 11,12,13
+
+
+
 
 

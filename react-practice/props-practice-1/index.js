@@ -13,7 +13,7 @@ class Badge extends React.Component {
 ReactDOM.render(
     <Badge
         name='Kevin Lai'
-        username='kevinlai'
+        username='kevinlaiGH'
         img='https://avatars1.githubusercontent.com/u/23046844?s=460&v=4' />,
     document.getElementById('app')
 );
