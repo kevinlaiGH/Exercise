@@ -1,3 +1,6 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 var USER_DATA = {
     name: 'Kevin Lai',
     img: 'https://avatars1.githubusercontent.com/u/23046844?s=460&v=4',

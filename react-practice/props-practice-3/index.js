@@ -1,4 +1,7 @@
-// passing props to parent then child
+// passing props to parent then chil
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 class Avatar extends React.Component {
     render() {
         return (

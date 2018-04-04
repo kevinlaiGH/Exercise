@@ -1,3 +1,7 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+var PropTypes = require('prop-types');
+
 class Users extends React.Component {
     render() {
         return (
@@ -24,6 +28,13 @@ class Users extends React.Component {
             </div>
         )
     }
+}
+
+Users.propTypes = {
+    list: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        friend: PropTypes.bool.isRequired,
+    })),
 }
 
 ReactDOM.render(
