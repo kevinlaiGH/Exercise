@@ -11,6 +11,12 @@ To make the components we just put them under src/component folder;
 and when we want to use that component, we just need to import it from the path
 
 Lesson 4:  Writing HTML with JSX:
+Pro tips **
+1) Writing JSX better than React.createElement
+2) If you are returning to multiple line (tags) ---> return (something_here)
 
-React.createElement is better than writing JSX
+from return method, you can only return one element, so wrap them in a <div> XXX </div> !!!!
+React 16 update: now its better to use <React.Fragment> XXX </React.Fragment>
+
+3)
 
