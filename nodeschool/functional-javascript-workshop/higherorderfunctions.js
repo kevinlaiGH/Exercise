@@ -7,4 +7,4 @@ function repeat(operation, num) {
     return repeat(operation, --num)
 }
 
-module.exports = repeat
+module.exports = repeat;

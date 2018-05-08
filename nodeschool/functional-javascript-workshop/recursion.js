@@ -11,3 +11,5 @@ function toUpperArray(items) {
 }
 
 toUpperArray(['hello', 'world']) // => ['HELLO', 'WORLD']
+
+module.exports = toUpperArray;
