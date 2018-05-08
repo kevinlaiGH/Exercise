@@ -1,9 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
-import Header from "./components/Header";
-import Fish from "./components/Fish";
-import Inventory from "./components/Inventory";
-import Order from "./components/Order";
+import Header from "./Header";
+import Inventory from "./Inventory";
+import Order from "./Order";
 
 class App extends React.Component {
   render() {
@@ -11,11 +10,10 @@ class App extends React.Component {
       <React.Fragment>
         <div className="catch-of-the-day">
           <div className="menu">
-            <Header />
-            <Fish />
+            <Header tagline="Fresh Seafood Market" />
           </div>
-          <Inventory />
           <Order />
+          <Inventory />
         </div>
       </React.Fragment>
     );
