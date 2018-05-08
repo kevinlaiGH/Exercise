@@ -16,7 +16,18 @@ Pro tips **
 2) If you are returning to multiple line (tags) ---> return (something_here)
 
 from return method, you can only return one element, so wrap them in a <div> XXX </div> !!!!
-React 16 update: now its better to use <React.Fragment> XXX </React.Fragment>
+React 16 update: now its better to use <React.Fragment> XXX </React.Fragment> instead of <div> XXX </div>!!!
 
-3)
+Lesson 5: Loading CSS into React Application
+
+rather than writing a big CSS file, we can just import the CSS directly into a component that only relates to that component
+
+import css file to our index.js , then it will apply to our entire application
+under index.js ->   import './css/style.css';
+
+Lesson 6: Creating application layout with components
+
+
+
+
 
