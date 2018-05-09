@@ -64,3 +64,43 @@ PRO TIP #######
 When you have a function, there's no 'this'. That function will get one argument called 'props'
 
 {this.props.tagline} -> {props.tagline}
+
+we can even remove the 'props' inside the {props.tagline} but we need to pass in {tagline} as an argument to replace props
+
+Lesson 9: Routing with React Router
+
+the goal of this lesson:
+
+1.  when user click a button -> it changes the URL -> render out the app component
+2.  when we visit a page doesn't exist -> we are going to get 404 error
+
+react router is easier to run, react router is a component!
+
+we are going to have 3 tags : BrowserRouter, Switch and Route
+
+Switch that is going to try the 1st route
+-> if it doesnt match it's gonna try thte second route
+-> if not, it will go to not found route
+
+Route will take a number of different props
+
+#Structure of Router.js
+
+```
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import StorePicker from "./StorePicker";
+import App from "./App";
+import NotFound from "./NotFound";
+const Router = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={StorePicker} />
+      <Route path="/store/:storeId" component={App} />
+      <Route component={NotFound} />
+    </Switch>
+  </BrowserRouter>
+);
+
+export default Router;
+```
