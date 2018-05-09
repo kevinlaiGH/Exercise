@@ -51,3 +51,16 @@ you can add some final properties in tagline -> <Header tagline="Fresh Seafood M
 .props is the object inside of the component (which contains all of our final properties, age, tagline ..etc)
 
 state: where the data lives, data's home
+
+Lesson 8: Stateless Functional Component
+
+Originally the App.js file only have render method, we can change these components to stateless function.
+Why? we want to have custom data in each component
+What will be inside?
+*static propTypes, state, life cyle methods (componentDidMount, componentWillUpdate, componentWillUnmount)
+*custom methods: add fish, update fish, remove the fish, load samples, add to order
+
+PRO TIP #######
+When you have a function, there's no 'this'. That function will get one argument called 'props'
+
+{this.props.tagline} -> {props.tagline}
