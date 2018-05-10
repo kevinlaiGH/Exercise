@@ -1,4 +1,4 @@
-Lesson 3: Creating our 1st Component
+**Lesson 3: Creating our 1st Component**
 
 Creating a class
 every class needs at least 1 method inside, its usually render()
@@ -20,16 +20,16 @@ Pro tips \*\*
 from return method, you can only return one element, so wrap them in a <div> XXX </div> !!!!
 React 16 update: now its better to use <React.Fragment> XXX </React.Fragment> instead of <div> XXX </div>!!!
 
-Lesson 5: Loading CSS into React Application
+**Lesson 5: Loading CSS into React Application**
 
 rather than writing a big CSS file, we can just import the CSS directly into a component that only relates to that component
 
 import css file to our index.js , then it will apply to our entire application
 under index.js -> import './css/style.css';
 
-Lesson 6: Creating application layout with components
+**Lesson 6: Creating application layout with components**
 
-Lesson 7: Passing data with props
+**Lesson 7: Passing data with props**
 
 props are the way we get data into a component
 we will have data that lives in our app.js
@@ -52,7 +52,7 @@ you can add some final properties in tagline -> <Header tagline="Fresh Seafood M
 
 state: where the data lives, data's home
 
-Lesson 8: Stateless Functional Component
+**Lesson 8: Stateless Functional Component**
 
 Originally the App.js file only have render method, we can change these components to stateless function.
 Why? we want to have custom data in each component
@@ -67,7 +67,7 @@ When you have a function, there's no 'this'. That function will get one argument
 
 we can even remove the 'props' inside the {props.tagline} but we need to pass in {tagline} as an argument to replace props
 
-Lesson 9: Routing with React Router
+**Lesson 9: Routing with React Router**
 
 the goal of this lesson:
 
@@ -84,7 +84,7 @@ Switch that is going to try the 1st route
 
 Route will take a number of different props
 
-#Structure of Router.js
+**Structure of Router.js**
 
 ```
 import React from "react";
@@ -104,3 +104,46 @@ const Router = () => (
 
 export default Router;
 ```
+
+**Lesson 10: Helper and Utility Functions**
+
+Pro tip:
+This lesson isn't related to React.
+For regular javascript functions that does things for us
+(e.g. calculating total of bill, homepage auto populates witha random store name)
+Instead of making the above examples into a React Component,
+We are putting all the javascript functions into a file called helper.js
+
+But everytime when we want to use that regular javascript function, we need to import it
+
+**Lesson 11: Events, Refs and this binding**
+How do we handle events in React?
+(e.g. handling a click, a form submit, a hover iwth )
+
+You can wrap the events in `SyntheticEvent`
+
+```
+class StorePicker extends React.Component {
+    handleClick(){                                                 <-----
+        alert("heyyyy!")                                           <-----
+    }
+  render() {
+    return (
+      <React.Fragment>
+        <form className="store-selector">
+          <h2>Please Enter A Store</h2>
+          <button onClick={this.handleClick} class="button">        <----- We added onClick={this.handleClick}
+            Click me!
+          </button>
+          <input type="text" required placeholder="Store Name" />
+          <button type="submit">Visit Store</button>
+        </form>
+      </React.Fragment>
+    );
+  }
+}
+```
+
+Lesson 12: Handling events!
+
+StorePicker.js is the child of the Router.js as show in Router.js
