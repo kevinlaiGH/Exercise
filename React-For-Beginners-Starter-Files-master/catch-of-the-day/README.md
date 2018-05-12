@@ -146,4 +146,26 @@ class StorePicker extends React.Component {
 
 Lesson 12: Handling events!
 
-StorePicker.js is the child of the Router.js as show in Router.js
+StorePicker.js is the child of the Router.js (as shown in Router.js)
+we will have access to all the methods we need.
+
+Lesson 12: Understanding state!
+
+State is just an object, an object that lives inside the component, store all the data in that component.
+State is a single source of truth.
+In React, instead of updating all of the pieces on website, we just want to update the data and let React take it, it knows where to update the value as long as you have used that variable somewhere.
+
+Data appears in inventory, order and the menu.
+
+WHen we are creating a submit form, we want to save all the data as an object
+`<form class="fish-edit" onSubmit={this.createFish}>`
+
+so do that, we need to make the form
+
+```
+createFish = event => {
+    // 1. stop the form from submitting
+    event.preventDefault();
+    console.log("Making a fish");
+  };
+```
