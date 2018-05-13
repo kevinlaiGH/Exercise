@@ -149,7 +149,7 @@ Lesson 12: Handling events!
 StorePicker.js is the child of the Router.js (as shown in Router.js)
 we will have access to all the methods we need.
 
-Lesson 12: Understanding state!
+Lesson 13: Understanding state!
 
 State is just an object, an object that lives inside the component, store all the data in that component.
 State is a single source of truth.
