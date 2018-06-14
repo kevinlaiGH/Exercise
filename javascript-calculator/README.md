@@ -30,3 +30,29 @@ Following from 1st case, then it must be a number (since it is not a symbol)
     buffer is just 0 at the start, it set to whatever number you click.
 2.  You can add things (accumulate) `buffer += value;`
 3.  Otherwise, something changes we rerender
+
+## The backspace button function:
+
+```
+buffer = buffer.substring(0, buffer.length - 1);
+```
+
+0 has length 1 and it does nothing
+
+## flushOperation function:
+
+it add/minus/multiple/divide up the number
+
+```
+function flushOperation(intBuffer) {
+  if (previousOperator === "+") {
+    runningTotal += intBuffer;
+  } else if (previousOperator === "-") {
+    runningTotal -= intBuffer;
+  } else if (previousOperator === "×") {
+    runningTotal *= intBuffer;
+  } else {
+    runningTotal /= intBuffer;
+  }
+}
+```
